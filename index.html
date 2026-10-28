@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Debugger - سامانه خودکار تست و دیباگ هوشمند</title>
+    <meta name="description" content="سامانه تمام‌خودکار تست، شناسایی باگ، شبیه‌سازی و رفع خطاهای اپلیکیشن‌ها با هوش مصنوعی و اجرای زنده" />
+    <meta property="og:title" content="Auto Debugger - سامانه خودکار تست و دیباگ هوشمند" />
+    <meta property="og:description" content="سامانه تمام‌خودکار تست، شناسایی باگ، شبیه‌سازی و رفع خطاهای اپلیکیشن‌ها با هوش مصنوعی و اجرای زنده" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script>
+      // Initialize React Fast Refresh preamble synchronously
+      window.$RefreshReg$ = window.$RefreshReg$ || function() {};
+      window.$RefreshSig$ = window.$RefreshSig$ || function() { return function(type) { return type; }; };
+    </script>
+    <script>
+      // HMR: Disabled in AI Studio preview. Ignore harmless Vite WebSocket connection errors.
+      window.addEventListener('error', function(event) {
+        if (
+          event.message &&
+          (event.message.includes('WebSocket') ||
+           event.message.includes('@vite/client') ||
+           event.message.includes('createWebSocketModuleRunnerTransport'))
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        const reason = String(event.reason || '');
+        if (
+          reason.includes('WebSocket') ||
+          reason.includes('@vite/client') ||
+          reason.includes('createWebSocketModuleRunnerTransport')
+        ) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

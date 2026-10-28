@@ -1,0 +1,6 @@
+{
+  "name": "Auto Debugger - سامانه خودکار تست و دیباگ هوشمند",
+  "description": "سامانه تمام‌خودکار تست، شناسایی باگ، شبیه‌سازی و رفع خطاهای اپلیکیشن‌ها با هوش مصنوعی و اجرای زنده",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
